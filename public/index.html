@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Админ-меню пользователей сайта</h1>
+
+
+    <section>
+      <h2>Создать пользователя</h2>
+      <div id="user-list">
+
+      </div>
+      <form id="user-form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" required>
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" required>
+        <label for="role-id">Роль:</label>
+        <input type="text" id="role-id" >
+        <label for="permission-id">Айди Роли:</label>
+        <input type="text" id="permission-id" >
+        <button type="submit">Создать пользователя</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Создать роль</h2>
+      <div id="role-list">
+
+      </div>
+      <form id="role-form">
+        <label for="role-name">Название роли:</label>
+        <input type="text" id="role-name" required>
+        <button type="submit">Создать роль</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Создать доступ</h2>
+      <div id="permission-list">
+
+      </div>
+      <form id="permission-form">
+        <label for="permission-name">Название доступа:</label>
+        <input type="text" id="permission-name" required>
+        <button type="submit">Создать доступ</button>
+      </form>
+    </section>
+
+
+    <section>
+      <h2>Создать блог</h2>
+      <div id="article-list">
+
+      </div>
+      <form id="article-form">
+        <label for="article-title">Оглавление блога:</label>
+        <input type="text" id="article-title" required>
+        <label for="user-id">Айди пользователя:</label>
+        <input type="text" id="user-id" required>
+        <label for="article-content">Содержание блога:</label>
+        <textarea id="article-content" required></textarea>
+        <button type="submit">Создать блог</button>
+      </form>
+    </section>
+
+
+    <section>
+      <h2>Создать комментарий к блогу</h2>
+      <div id="comment-list">
+
+      </div>
+      <form id="comment-form">
+        <label for="comment-content">Содержание комментария:</label>
+        <textarea id="comment-content" required></textarea>
+        <label for="article-id">Айди блога:</label>
+        <textarea id="article-id" required></textarea>
+        <label for="article-user-id">Айди пользователя:</label>
+        <textarea id="article-user-id" required></textarea>
+        <button type="submit">Создать комментарий</button>
+      </form>
+    </section>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
